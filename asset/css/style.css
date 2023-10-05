@@ -1,0 +1,204 @@
+:root{
+    --color-body: #ffff;
+    --color-heading: #000;
+    --color-base: #033f47; 
+    --color-base2: #f6a503;
+    --color-brand:  hsl(72, 88%, 74%);
+    --color-brand2 :#edff58;
+    --sidebar-width: 120px;
+    --side-height: 120px;
+    --font-base: 'Times New Roman', Times, serif;
+    --font-brand: bold;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:var(--color-body); 
+    font-family: var(--font-base);
+}
+h1,h2,h3,h4,h5{
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+/* PAGE_1 */
+.page_1{
+    height: 100vh;
+    background-image: linear-gradient(to bottom left,rgb(7, 54, 66) ,rgb(3, 63, 71) );
+    display: block ;
+}
+.head{
+   position: relative;
+    margin-top: 180px;
+}
+.head h1{
+    color: var(--color-base2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px; 
+}
+.head h6{
+    text-transform: lowercase;
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    color: #ffff;
+}
+.gen_access_btns{
+    margin-top: 8%;
+}
+.gen_access_btns .btn a{ 
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all .4s; 
+  color: #000; 
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+.btn-warning:hover{
+    background-color: rgba(231, 181, 17, 0.795);;
+    cursor: pointer;
+}
+.btn-warning:checked{
+    background-color: rgba(231, 181, 17, 0.795);
+}
+/*NAVBAR*/
+ .navbar{
+    background-color: var(--color-base);
+    box-shadow: 2px 7px 9px rgba(0, 0 ,0, 0.2); 
+    display: block;
+} 
+img{
+    position: absolute;
+    margin-top: -26.5px;
+    width:  9%;
+    border-radius: 50%;
+}
+nav .container-md .navbar-brand h2,h5{
+    color: var(--color-base2);
+    outline: #ffff;
+    outline: #f6a503;
+}
+
+/* CONTENT*/
+.container_1{
+    position: absolute;
+    margin-top: 145px;
+    align-items: left;
+    display: block ;
+}
+.container_1 .header_2~h2{
+    font-weight: 600;
+    text-transform: lowercase;
+}
+label{
+    font-family: var(--font-base);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.FACAULTY select option{
+    color: #000;
+      text-transform: lowercase;
+}
+form .btn_pg_2 .btn{
+    background-color: var(--color-base);
+    
+}
+form .btn_pg_2 .btn a{
+    color: var(--color-base2);
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn-warning:hover{
+    background-color: rgba(231, 181, 17, 0.795);;
+    cursor: pointer;
+}
+.btn-warning:checked{
+    background-color: rgba(231, 181, 17, 0.795);
+}
+.container_2{
+    display: block;
+    position: absolute;
+    margin-top: 145px;
+    align-items: left;
+}
+.container_3{
+    display: block;
+    position: absolute;
+    margin-top: 145px;
+    align-items: left;
+}
+.container_4{
+    display: block;
+    position: absolute;
+    margin-top: 145px;
+    align-items: left;
+}
+/*media -responsiveness*/
+
+ @media (max-width: 802px){
+  
+    .navbar-brand span{
+        margin-left: 20%;
+        display: none; 
+    }
+    .navbar-brand img{
+        display: none;
+    }
+    /* .c_2 h3{
+        font-size: 16px;
+        margin-top: 160px;
+    }*/
+} 
+@media (min-width: 800px) {
+    .navbar-brand img{
+        margin-left: -30%;
+    }
+    
+} 
+@media (max-width: 700px) {
+    .page_1 .head{
+        margin-top: 2rem;
+    }
+    .gen_access_btns button{
+        margin-top: 1rem;
+        padding: 3rem;
+    }
+    .page_1{
+        height: 135vh;
+    }
+    .gen_access_btns .btn_12{
+        padding: 2rem;
+    }
+    
+} 
+
+
+/* table of TO_DO_LIST */
+
+#table_1{
+
+}
+
+
+
+#contact .form-control{
+    background-color: var(--color-base2);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+#contact .form-control:focus{
+    border-color: var(--color-body);
+   box-shadow: none;   
+}
+#contact .form-control::placeholder{
+    color: var(--color-body);
+}
+#contact input.form-control{
+    height: 44px;
+}
+#contact button{
+    border-color: var(--color-base);
+}
